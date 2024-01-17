@@ -1,0 +1,17 @@
+{
+  "name": "ethers-fund-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "yarn solc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "save": "^2.9.0",
+    "solc-js": "^1.0.1"
+  }
+}
