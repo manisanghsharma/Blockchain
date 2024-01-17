@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.8;
 
-import "./PriceConverter.sol";
+import "../Remix Fund Me/PriceConverter.sol";
 
 contract FundMe {
     using PriceConverter for uint256;
@@ -44,6 +44,14 @@ contract FundMe {
     modifier onlyOwner {
         require(owner == msg.sender, "Sender is not owner!");
         _;
+    }
+
+        receive() external payable {
+        fund();
+    }
+
+    fallback() external payable { 
+        fund();
     }
 
 }
